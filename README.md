@@ -17,3 +17,7 @@ Documentation for Sequelize
 npm config set scripts-prepend-node-path auto
 ```
 
+Add gitignore file
+```css
+touch .gitignore && echo "node_modules/" >> .gitignore && git rm -r --cached node_modules ; git status
+```
