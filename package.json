@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-postgres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hansajayathilaka/Node.Js-Postgres.git"
+  },
+  "author": "Hansa Jayathilaka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hansajayathilaka/Node.Js-Postgres/issues"
+  },
+  "homepage": "https://github.com/hansajayathilaka/Node.Js-Postgres#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.0.0",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
