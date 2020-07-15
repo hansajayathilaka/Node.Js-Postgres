@@ -3,6 +3,7 @@ const Handlebars = require('handlebars')
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const path = require('path');
+const logger = require('morgan');
 const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access')
 
 
@@ -17,6 +18,9 @@ db.authenticate()
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+// Log requests to the console.
+app.use(logger('dev'));
 
 // Handlebars
 const hbs = exphbs.create({
